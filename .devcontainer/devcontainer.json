@@ -4,7 +4,6 @@
     "features": {
         "ghcr.io/devcontainers/features/common-utils:1": {},
         "ghcr.io/devcontainers/features/git:1": {},
-        "ghcr.io/devcontainers/features/cmake:1": {},
         "ghcr.io/devcontainers/features/gcc:1": {}
     },
     "customizations": {
@@ -16,14 +15,14 @@
                 "editor.minimap.enabled": false
             },
             "extensions": [
-                "ms-vscode.cpptools",  // C++ language support
-                "ms-vscode.cmake-tools",  // CMake support
+                "ms-vscode.cpptools",  // C++ tools
+                "ms-vscode.cmake-tools",  // CMake integration
                 "twxs.cmake",  // CMake syntax highlighting
-                "llvm-vs-code-extensions.vscode-clangd"  // Clangd for additional C++ support
+                "llvm-vs-code-extensions.vscode-clangd"  // Clang support
             ]
         }
     },
-    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y gdb",
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y gdb cmake",  // Install GDB and CMake manually
     "remoteUser": "vscode",
     "forwardPorts": []
 }
