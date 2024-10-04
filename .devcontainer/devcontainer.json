@@ -1,0 +1,29 @@
+{
+    "name": "C++ Development",
+    "image": "mcr.microsoft.com/devcontainers/cpp:0-ubuntu-22.04",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {},
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/cmake:1": {},
+        "ghcr.io/devcontainers/features/gcc:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnSave": true,
+                "editor.tabSize": 4,
+                "workbench.sideBar.location": "right",
+                "editor.minimap.enabled": false
+            },
+            "extensions": [
+                "ms-vscode.cpptools",  // C++ language support
+                "ms-vscode.cmake-tools",  // CMake support
+                "twxs.cmake",  // CMake syntax highlighting
+                "llvm-vs-code-extensions.vscode-clangd"  // Clangd for additional C++ support
+            ]
+        }
+    },
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y gdb",
+    "remoteUser": "vscode",
+    "forwardPorts": []
+}
