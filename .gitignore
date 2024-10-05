@@ -21,8 +21,16 @@ lib/
 *.dll
 *.so
 
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
 # VS Code specific
 .vscode/
+.history/
 *.code-workspace
 
 # IDE settings
@@ -37,3 +45,25 @@ lib/
 
 # Windows files
 Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Conan package manager
+conanbuildinfo.txt
+conanbuildinfo.cmake
+conaninfo.txt
+conan.lock
+
+# vcpkg package manager
+/vcpkg_installed/
+
+# Backup files
+*~
+*.swp
+*.swo
+
+# Linux directory settings
+.directory
