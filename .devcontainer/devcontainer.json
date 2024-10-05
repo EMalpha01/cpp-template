@@ -10,20 +10,19 @@
       "settings": {
         "editor.minimap.enabled": false,
         "workbench.sideBar.location": "right",
+        "C_Cpp.intelliSenseEngine": "default",
         "C_Cpp.clang_format_fallbackStyle": "Google",
         "C_Cpp.clang_format_sortIncludes": true,
-        "C_Cpp.intelliSenseEngine": "Default",
         "C_Cpp.default.compilerPath": "/usr/bin/g++"
       },
       "extensions": [
         "ms-vscode.cpptools-extension-pack",
         "ms-vscode.cmake-tools",
-        "llvm-vs-code-extensions.vscode-clangd"
+        "llvm-vs-code-extensions.vscode-clangd",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
       ]
     }
   },
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y gcc g++ gdb cmake clang clang-tidy clang-format valgrind && echo 'Container initialized!'",
-  "settings": {
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
-  }
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y gcc g++ gdb cmake clang clang-tidy clang-format valgrind && echo 'Container initialized!'"
 }
