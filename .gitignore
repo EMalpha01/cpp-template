@@ -1,0 +1,39 @@
+# C++ binary files
+*.o
+*.obj
+*.so
+*.exe
+*.out
+*.dll
+*.dylib
+
+# C++ cache and logs
+*.log
+*.cache
+
+# Build directories
+/build/
+bin/
+lib/
+
+# Compiled dynamic libraries
+*.dylib
+*.dll
+*.so
+
+# VS Code specific
+.vscode/
+*.code-workspace
+
+# IDE settings
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# MacOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
